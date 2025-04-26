@@ -8,7 +8,7 @@ class TaskUser(HttpUser):
     @task
     def create_and_get_task(self):
         name = ''.join(random.choices(string.ascii_letters, k=8))
-        difficulty = random.randint(1, 4)
+        difficulty = random.randint(0, 2)
 
         # Отправка POST запроса
         response = self.client.post(

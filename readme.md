@@ -1,7 +1,7 @@
 ## Запуск теста:
 
 ```terminal
-locust -f locustfile.py --host=http://localhost:8000
+locust -f locust.py --host=http://localhost:8080
 ```
 
 По адресу, указанному в логах, будет располагаться админка для запуска
